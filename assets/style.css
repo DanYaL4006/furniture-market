@@ -1,0 +1,897 @@
+@font-face {
+    font-family: inter;
+    src: url(./fonts/Inter-Regular.otf);
+}
+
+:root {
+    --bgc-green: #3b5d50;
+}
+
+body {
+    font-family: "inter";
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--bgc-green);
+    height: 584px
+}
+
+p {
+    font-size: 14px;
+    opacity: .5;
+    line-height: 1.8rem;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.home {
+    opacity: 1 !important;
+
+}
+
+.navbar a {
+    font-family: "inter";
+    color: #fff !important;
+    font-size: 14px !important;
+    opacity: .5;
+}
+
+.navbar-brand span {
+    opacity: .4;
+}
+
+.navbar hr {
+    transition: all .3s;
+}
+
+.navbar li a {
+    transition: all .2s;
+}
+
+.navbar li:hover a {
+    opacity: 1 !important;
+    color: #fff;
+}
+
+.home:hover {
+    opacity: 1 !important;
+    color: #fff;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar img {
+    cursor: pointer;
+}
+
+.home:hover .hr-home {
+    visibility: visible !important;
+    width: 40px !important;
+}
+
+.shop:hover .hr-shop {
+    visibility: visible !important;
+    width: 35px !important;
+}
+
+.about:hover .hr-about {
+    visibility: visible !important;
+    width: 60px !important;
+}
+
+.servics:hover .hr-servics {
+    visibility: visible !important;
+    width: 60px !important;
+}
+
+.blog:hover .hr-blog {
+    visibility: visible !important;
+    width: 30px !important;
+}
+
+.contact:hover .hr-contact {
+    visibility: visible !important;
+    width: 75px !important;
+}
+
+.start-header h1 {
+    width: 80%;
+}
+
+.start-header .btn-shop-now {
+    background-color: #f9bf29;
+}
+
+.start-header .btn-explore-light {
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.3);
+    transition: all .3s;
+}
+
+.start-header .btn-explore-light:hover {
+    border-color: white;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.mobl::after {
+    content: "";
+    position: absolute;
+    width: 255px;
+    height: 217px;
+    background-image: url(https://themewagon.github.io/furni/images/dots-light.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 15px;
+    top: 140px;
+    z-index: -400 !important;
+}
+
+.img-mobl {
+    max-width: 780px;
+}
+
+.mobl {
+    z-index: 500 !important;
+    margin-top: -28px;
+}
+
+.sect1 h2 {
+    font-weight: 600;
+    color: #2f2f2f;
+}
+
+.sect1 a {
+    background-color: #2f2f2f;
+    padding: 12px 30px;
+    opacity: 0.9;
+    transition: all .3s;
+}
+
+.sect1 a:hover {
+    opacity: 1;
+}
+
+.sect1 h3 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.sect1 strong {
+    font-size: 18px;
+}
+
+.product:hover img {
+    margin-top: -30px;
+}
+
+.product img {
+    transition: all 0.3s;
+}
+
+.product {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.product::before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    background: #dce5e4;
+    height: 0%;
+    border-radius: 10px;
+    transition: .3s all ease;
+    z-index: -1;
+}
+
+.product:hover::before {
+    height: 60%;
+}
+
+.product:hover .svg-product {
+    opacity: 1;
+}
+
+.svg-product {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: #2f2f2f;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: .3s all ease;
+    opacity: 0;
+}
+
+main {
+    background-color: #eff2f1;
+}
+
+.why-choose-us {
+    margin-top: 250px;
+}
+
+.why-choose-us p {
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+
+.why-choose-us span {
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.why-img::before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url(https://themewagon.github.io/furni/images/dots-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-40%, -40%);
+    z-index: -1;
+}
+
+.why-img {
+    margin-left: 90px;
+    margin-top: 15px;
+    z-index: 500;
+}
+
+.icon-why {
+    width: 33px;
+    height: 33px;
+    background: rgba(59, 93, 80, 0.2);
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: -45px;
+}
+
+.sect2 {
+    margin-top: 210px;
+}
+
+.sect2 a {
+    opacity: 0.9;
+    transition: all .3s;
+}
+
+.sect2 a:hover {
+    opacity: 1;
+}
+
+.grid1::before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url(https://themewagon.github.io/furni/images/dots-green.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: translate(-40%, -40%);
+}
+
+.grid1 {
+    z-index: 5;
+}
+
+.grid2 {
+    padding-left: 20px;
+}
+
+.grid3 {
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.grid1 img {
+    border-radius: 20px;
+    max-width: 100%;
+    width: 430px;
+}
+
+.grid2 img {
+    border-radius: 20px;
+    max-width: 100%;
+    width: 200px;
+    margin-left: 430px;
+    margin-top: -870px;
+}
+
+.grid3 img {
+    border-radius: 20px;
+    max-width: 100%;
+    width: 350px;
+    margin-left: 300px;
+    margin-top: -345px;
+}
+
+.grid {
+    position: relative;
+}
+
+.space {
+    padding-left: 53px;
+}
+
+.sect3 h6 {
+    font-size: 14px;
+}
+
+.p-caption {
+    line-height: 1.3rem;
+}
+
+.th {
+    z-index: 5;
+}
+
+.th::before {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    background: #dce5e4;
+    width: 98px;
+    height: 98px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.th {
+    margin-right: 10px;
+    flex: 0 0 120px;
+    position: relative;
+}
+
+.sect3 {
+    padding: 0 0 7rem 0;
+}
+
+.perv {
+    background-color: rgba(59, 93, 80, 0.1);
+    color: #2f2f2f !important;
+    width: 58px;
+    height: 58px;
+    fill: #2f2f2f !important;
+    margin-top: 150px;
+}
+
+.next {
+    background-color: rgba(59, 93, 80, 0.1);
+    color: #2f2f2f !important;
+    width: 58px;
+    height: 58px;
+    fill: #2f2f2f !important;
+    margin-top: 150px;
+}
+
+.p-caro-sect4 {
+    font-size: 19px !important;
+    line-height: 2rem;
+    width: 70%;
+    margin: 35px auto !important;
+    opacity: 0.6;
+}
+
+.sp-light {
+    opacity: 0.6;
+}
+
+.sp-dark {
+    opacity: 1;
+}
+
+.a-first {
+    font-size: 16px;
+    display: block;
+}
+
+.recent-blog img {
+    transition: all 0.3s;
+}
+
+.recent-blog:hover img {
+    opacity: 0.7;
+}
+
+.recent-blog:hover img {
+    opacity: 0.7;
+}
+
+.recent-blog:hover img {
+    opacity: 0.7;
+}
+
+footer input {
+    height: 50px;
+}
+
+.btn-primary {
+    background: #3b5d50;
+    border-color: #3b5d50;
+}
+
+.sofa {
+    position: relative;
+    top: 175px;
+    left: 725px;
+}
+
+.sofa img {
+    max-width: 380px !important;
+}
+
+.sofa2 img {
+    margin-left: 825px;
+    margin-bottom: -200px !important;
+    max-width: 380px !important;
+}
+
+footer .a-icon-footer {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: #dce5e4;
+    color: #3b5d50;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: all .3s;
+    margin-top: 10px;
+}
+
+footer .a-icon-footer:hover {
+    color: #fff;
+    background-color: #3b5d50;
+}
+
+.footer-furni {
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3b5d50;
+}
+
+footer li {
+    margin-top: 15px;
+}
+
+footer li a {
+    color: #2f2f2f;
+    opacity: 0.9;
+    transition: all .3s;
+}
+
+footer li a:hover {
+    opacity: 0.4;
+}
+
+.header-shop {
+    height: 385px;
+}
+.header-height{
+    height: 536px;
+}
+.main-about {
+    margin-top: -250px;
+}
+
+.main-servics {
+    margin-top: 0;
+}
+
+.mt {
+    margin-top: 170px;
+}
+
+.contact .contact-icon {
+    border-radius: 10px;
+    flex: 0 0 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #3b5d50;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+.btn-primary-hover-outline {
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #2f2f2f;
+    border-color: #2f2f2f;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+.site-blocks-table .product-thumbnail {
+    width: 200px;
+}
+
+.site-blocks-table thead th {
+    padding: 30px;
+    text-align: center;
+    border-width: 0px !important;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+}
+
+.site-blocks-table tbody tr:first-child td {
+    border-top: 1px solid #3b5d50 !important;
+}
+
+.site-blocks-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.before-footer-section {
+    padding: 7rem 0 12rem 0 !important;
+}
+
+.site-blocks-table .btn {
+    border: none;
+    height: auto !important;
+}
+
+.increase {
+    margin-top: -52px;
+    margin-left: 115px !important;
+}
+
+.increase2 {
+    margin-top: -50px !important;
+    margin-left: 115px !important;
+}
+
+table {
+    background-color: #3b5d50 !important;
+}
+
+.bg-body-secondary {
+    background-color: #eff2f1 !important;
+}
+
+.thank-you-icon:before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(59, 93, 80, 0.2);
+}
+
+.thank-you-icon {
+    color: #3b5d50;
+}
+
+.p-return-costumer {
+    border: 1px solid rgba(59, 93, 80, 0.1);
+    margin-top: 120px;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.order-table td {
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+thead {
+    border-bottom: 2px solid black;
+}
+
+.form-group label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.collapse-title:hover{
+    text-decoration: none !important;
+}
+.sp-wrong-data {
+    border: 2px solid red;
+    padding: 3px;
+    font-size: 10.5px;
+    border-radius: 5px;
+    padding-right: 19px;
+    visibility: hidden;
+}
+
+.svg-exclam {
+    color: red;
+    visibility: hidden;
+    width: 13px;
+}
+
+.svg-wrong1 {
+    position: absolute;
+    left: 317px;
+    top: 70px;
+    visibility: hidden;
+}
+
+.user-not-valid {
+    position: absolute;
+    left: 170px;
+    top: 65px;
+    color: red;
+}
+
+.svg-wrong2 {
+    position: absolute;
+    left: 317px;
+    top: 140px;
+    visibility: hidden;
+}
+
+.pass-not-valid {
+    position: absolute;
+    left: 170px;
+    top: 135px;
+    color: red;
+}
+
+.svg-wrong3 {
+    position: absolute;
+    left: 314px;
+    top: 205px;
+    visibility: hidden;
+}
+
+.pass2-not-same {
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    color: red;
+}
+
+.sp-check-len {
+    font-size: 10.5px;
+    padding: 5px;
+    border-radius: 50px;
+    visibility: hidden;
+}
+
+.sp-check-short {
+    background-color: red;
+    position: absolute;
+    left: 320px;
+    top: 169px;
+}
+
+.sp-check-good {
+    background-color: darkorange;
+    position: absolute;
+    left: 320px;
+    top: 169px;
+}
+
+.sp-check-strong {
+    background-color: green;
+    position: absolute;
+    left: 320px;
+    top: 169px;
+}
+.sp-pls-fill {
+    font-size: 14px;
+    font-family: inter;
+    letter-spacing: 1px;
+    color: red;
+    position: absolute;
+    top: 300px;
+    left: 76px;
+    visibility: hidden;
+}
+.login-body{
+    background-color: #eff2f1;
+}
+.signIn {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    right: -35%;
+    border-radius: 5px;
+    background: #8E0E00;
+    background: linear-gradient(to right, #1F1C18, #3b5d50);
+}
+
+#inp-t {
+    width: 250px;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    transition: all 0.1s;
+    top: 100px;
+    border-bottom: 1px solid #d9d9d9;
+    left: 65px;
+    right: 20px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#inp-p {
+    transition: all 0.1s;
+    width: 250px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    position: absolute;
+    top: 165px;
+    left: 65px;
+    right: 20px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#inp-p2 {
+    width: 250px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    position: absolute;
+    top: 228px;
+    left: 65px;
+    right: 20px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.btn-login span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.btn-login:active {
+    cursor: pointer;
+    transform: scale(5px);
+    border: 2px solid #fff;
+}
+
+.signIn h1 {
+    position: absolute;
+    left: 145px;
+    top: 5px;
+    font-size: 30px;
+    font-family: cursive;
+    color: #fff;
+    font-family: inter;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#l1 {
+    color: white;
+    font-size: 11px;
+    font-family: cursive;
+    position: absolute;
+    left: 65px;
+    top: 75px;
+}
+
+#l2 {
+    color: white;
+    font-size: 11px;
+    font-family: cursive;
+    position: absolute;
+    left: 65px;
+    top: 139px;
+}
+
+#l3 {
+    top: 202px;
+    position: absolute;
+    font-family: cursive;
+    font-size: 11px;
+    left: 65px;
+    color: white;
+}
+
+#already-p {
+    color: #f9bf29;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 270px;
+    left: 177px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn-login {
+    width: 250px;
+    padding: 5px;
+    position: absolute;
+    top: 350px;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 72px;
+    border-radius: 50px;
+    right: 20px;
+    border: none;
+    transition: all .3s;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+#svg-pass {
+    width: 13px;
+    position: absolute;
+    left: 45px;
+    transition: all 0.5s;
+    top: 174px;
+    color: #fff;
+}
+
+#svg-user {
+    width: 13px;
+    position: absolute;
+    left: 45px;
+    top: 108px;
+    transition: all 0.5s;
+    color: #fff;
+}
+
+.svg-repeat-p {
+    left: 45px;
+    width: 15px;
+    top: 236px;
+    color: #fff;
+    position: absolute;
+    transition: all 0.5s;
+}
+.login-header{
+ height: 70px;   
+}
